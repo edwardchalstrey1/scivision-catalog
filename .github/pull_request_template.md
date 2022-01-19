@@ -1,15 +1,8 @@
-Add your model to the `models.json`, with the following format:
+# Adding to the scivision catalog
 
-```
-  "model-003":{
-    "task":"segmentation",
-    "model":"github.com/alan-turing-institute/cv-algortithm",
-    "github_branch":"master",
-    "language":"Python3",
-    "data_format":"tif",
-    "pretrained":"yes",
-    "labels_required":"yes",
-    "institution":"alan-turing-institute",
-    "tags": ["dummy"]
-  }
-```
+You should have added an entry to `models.json` and/or `datasources.json`. If not, please modify one or both of these files as shown in the README.
+
+### Comment here any information relevant to a reviewer who will merge your entries into the scivision catalog.
+
+### Note: Please delete your branch after mergeing the pull request.
+
