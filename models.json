@@ -53,5 +53,16 @@
     "labels_required":"no",
     "institution":"alan-turing-institute",
     "tags": ["dummy"]
-  }
+  },
+    "model-005":{
+    "task":["object-detection", "segmentation"],
+    "model":"https://github.com/acocac/scivision-treecrown-plugin",
+    "github_branch":"master",
+    "language":"Python3",
+    "data_format":"png",
+    "pretrained":"yes",
+    "labels_required":"no",
+    "institution":"alan-turing-institute",
+    "tags": ["2D", "RGB", "ecology"]
+  },
 }
