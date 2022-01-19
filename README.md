@@ -1,40 +1,44 @@
 # scivision-catalog
 A package holding scivision datasets and models
 
+## Extending the catalog of models and datasets
+
+Create a new branch and do one or both of the following, before launching a pull request for your additions to be reviewed:
+
 ## Add a new model
 
-Add your model to the `models.json`, with the following format:
+Add your model to the end of `models.json`, with the following format, incrementing the model number by one:
 
 ```
-  "model-003":{
+  "model-XXX":{
     "task":"segmentation",
-    "model":"github.com/alan-turing-institute/cv-algortithm",
+    "model":"github.com/alan-turing-institute/my-model",
     "github_branch":"master",
     "language":"Python3",
     "data_format":"tif",
     "pretrained":"yes",
     "labels_required":"yes",
     "institution":"alan-turing-institute",
-    "tags": ["dummy"]
+    "tags":[
+      "help-needed", "3D", "cell", "cell-counting", "biology", "biomedical-science" 
+    ]
   }
 ```
 
 ## Add a new dataset
 
-
-Add your model to the `datasources.json`, with the following format:
+Add your dataset to the end of `datasources.json`, with the following format, incrementing the data number by one:
 
 ```
-{
-  "model-000":{
+  "data-XXX":{
     "task":["object-detection", "segmentation"],
-    "model":"https://github.com/stardist/stardist",
-    "github_branch":"master",
-    "language":"Python3",
-    "data_format":"tif",
-    "pretrained":"yes",
-    "labels_required":"yes",
-    "institution":"epfl",
-    "tags": ["2D", "3D", "optical-microscopy", "xray", "microtomography", "cell-counting", "plant-phenotyping", "climate-change-and-agriculture"]
+    "domain":["optical-microscopy"],
+    "datasource":"https://github.com/my_datasource/releases/download/0.3.0/demo.zip",
+    "format":"tif",
+    "labels":"yes",
+    "institution":"alan-turing-institute",
+    "tags":[
+      "help-needed", "3D", "cell", "cell-counting", "biology", "biomedical-science" 
+    ]
   }
  ```
