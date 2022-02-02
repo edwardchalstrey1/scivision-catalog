@@ -1,4 +1,17 @@
 {
+    "Turing test plugin": {
+        "data_format": "jpg",
+        "github_branch": "master",
+        "institution": "alan-turing-institute",
+        "labels_required": "no",
+        "language": "Python3",
+        "model": "https://github.com/alan-turing-institute/scivision-test-plugin",
+        "pretrained": "yes",
+        "tags": [
+            "dummy"
+        ],
+        "task": "object-detection"
+    },
     "model-000": {
         "data_format": "tif",
         "github_branch": "master",
