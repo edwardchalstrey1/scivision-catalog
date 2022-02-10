@@ -1,4 +1,20 @@
 {
+    "Dropbear": {
+        "datasource": "https://en.wikipedia.org/wiki/Drop_bear#/media/File:Dropbear.jpg",
+        "domain": [
+            "computer-vision"
+        ],
+        "format": "jpg",
+        "institution": "Wikipedia",
+        "labels": "yes",
+        "tags": [
+            "test",
+            "animal"
+        ],
+        "task": [
+            "object-detection"
+        ]
+    },
     "data-000": {
         "datasource": "https://github.com/stardist/stardist/releases/download/0.3.0/demo3D.zip",
         "domain": [
